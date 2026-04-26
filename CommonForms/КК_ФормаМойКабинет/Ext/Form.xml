@@ -11,6 +11,7 @@
 				</v8:item>
 			</Title>
 			<TitleFont ref="style:NormalTextFont" height="22" kind="StyleItem" scale="100"/>
+			<Font ref="style:NormalTextFont" height="22" kind="StyleItem" scale="100"/>
 			<ContextMenu name="КонтрагентКонтекстноеМеню" id="43"/>
 			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="44"/>
 		</LabelField>
@@ -55,7 +56,11 @@
 							<DataPath>ВсегоЗаказов</DataPath>
 							<TitleFont ref="style:NormalTextFont" height="18" kind="StyleItem" scale="100"/>
 							<TitleLocation>None</TitleLocation>
-							<Height>6</Height>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
+							<TextColor>style:TableHeaderTextColor</TextColor>
 							<ContextMenu name="ВсегоЗаказовКонтекстноеМеню" id="34"/>
 							<ExtendedTooltip name="ВсегоЗаказовРасширеннаяПодсказка" id="35"/>
 						</LabelField>
@@ -92,8 +97,11 @@
 						<LabelField name="ОжидаетОплаты" id="36">
 							<DataPath>ОжидаетОплаты</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<Width>18</Width>
-							<Height>6</Height>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
+							<TextColor>#D0786B</TextColor>
 							<ContextMenu name="ОжидаетОплатыКонтекстноеМеню" id="37"/>
 							<ExtendedTooltip name="ОжидаетОплатыРасширеннаяПодсказка" id="38"/>
 						</LabelField>
@@ -129,8 +137,11 @@
 						<LabelField name="ВРаботе" id="39">
 							<DataPath>ВРаботе</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<Width>12</Width>
-							<Height>6</Height>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
+							<TextColor>#3F3FBC</TextColor>
 							<ContextMenu name="ВРаботеКонтекстноеМеню" id="40"/>
 							<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="41"/>
 						</LabelField>
