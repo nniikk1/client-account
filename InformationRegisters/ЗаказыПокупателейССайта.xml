@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="2550c6f5-d8c1-4d8b-9905-14f7f736c3ef">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаказыПокупателейССайта" category="Record">
+				<xr:TypeId>36368b9d-bbe4-46cf-8667-e97e2c179d4f</xr:TypeId>
+				<xr:ValueId>c454d4cc-9236-4648-b99f-50f36b7b4ea6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ЗаказыПокупателейССайта" category="Manager">
+				<xr:TypeId>a60cf6da-2b8f-4470-822b-387dcdf9aa32</xr:TypeId>
+				<xr:ValueId>511fdebd-3df6-4f80-831c-65bfcb4db103</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаказыПокупателейССайта" category="Selection">
+				<xr:TypeId>31e27a03-707c-4da5-883e-aa7e5acc6f4b</xr:TypeId>
+				<xr:ValueId>6ce8d96f-3949-4927-bd42-fabae09f8585</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ЗаказыПокупателейССайта" category="List">
+				<xr:TypeId>bd8baf44-e212-4fdd-b075-0bc003e78682</xr:TypeId>
+				<xr:ValueId>5c04c143-b762-4ae9-b42c-74c3095dcb68</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаказыПокупателейССайта" category="RecordSet">
+				<xr:TypeId>23ef1009-c097-4806-a5f3-c43e84685ce0</xr:TypeId>
+				<xr:ValueId>b0a136d0-5ed7-4f7e-85dd-c25bfd77fb64</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаказыПокупателейССайта" category="RecordKey">
+				<xr:TypeId>0d3e8b4e-518a-40fe-ad17-eea51996a4d2</xr:TypeId>
+				<xr:ValueId>3fe4d5e5-8fc7-4dc2-8aa4-e0fd8e9b26da</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаказыПокупателейССайта" category="RecordManager">
+				<xr:TypeId>76dcf4b7-cdd9-4d84-988c-2e83ea511389</xr:TypeId>
+				<xr:ValueId>f1fee8c7-0daa-4e99-8b84-c3098a6a2c30</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаказыПокупателейССайта</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1ca02cd8-cf2d-4e78-815b-1efef668a813</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="a85c6717-2538-4ed4-b221-b9566a35243b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерЗаказаНаСайте</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f7ee6da4-008c-4b72-b828-61666509c9cd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="8de471b7-f4a6-4c32-b481-04644cd6b2da">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаЗаказаНаСайте</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fb5e1765-5eab-4144-95d3-ca843bc53cd9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="125784fe-9f49-4356-b928-91e25a4c004e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗаказПокупателя</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>aecc8be4-ffe5-4d40-be69-6153c696eb5d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

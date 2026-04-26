@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="357ad810-74fc-442b-ba35-516cfa200a06">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ЗоныТарифыДоставки" category="Object">
+				<xr:TypeId>cf2bfbaf-a2b4-4f8c-ae5b-8393c25eed9d</xr:TypeId>
+				<xr:ValueId>45e5db4e-0539-440f-a6fe-0c2342ed467d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ЗоныТарифыДоставки" category="Ref">
+				<xr:TypeId>254fb717-f139-497c-a638-780811827dcc</xr:TypeId>
+				<xr:ValueId>535142b6-0905-40c0-be8a-4419153342f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ЗоныТарифыДоставки" category="Selection">
+				<xr:TypeId>33b97ae3-46a1-4f5c-a01e-b2d6333e6766</xr:TypeId>
+				<xr:ValueId>bb3dfe34-865b-4f7a-853d-b901e2d4913b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ЗоныТарифыДоставки" category="List">
+				<xr:TypeId>3291aaf3-e642-409a-ad7c-a93e90779f23</xr:TypeId>
+				<xr:ValueId>36b8d68e-1af0-4e14-9b5f-f1e75eb3b74f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ЗоныТарифыДоставки" category="Manager">
+				<xr:TypeId>b5531eb2-3b44-41db-b8d2-ff849b4458b6</xr:TypeId>
+				<xr:ValueId>d3a6b0ee-7dce-44c2-811e-bfe477459811</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗоныТарифыДоставки</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>fdf0dbd2-df2a-482c-859f-24035b6e310f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

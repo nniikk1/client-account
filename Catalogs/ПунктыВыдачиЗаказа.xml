@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="d858a6c5-18db-4a01-a5c3-504823dc0227">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПунктыВыдачиЗаказа" category="Object">
+				<xr:TypeId>558a5b4e-c1e1-4202-8dc4-ed74128fafd2</xr:TypeId>
+				<xr:ValueId>06461fdb-479d-4611-b305-7f1add95bc99</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПунктыВыдачиЗаказа" category="Ref">
+				<xr:TypeId>938bbddd-8e1f-4ae3-8f1d-36178943eda5</xr:TypeId>
+				<xr:ValueId>39c9ed9e-f694-4201-a719-505c7709d1f6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПунктыВыдачиЗаказа" category="Selection">
+				<xr:TypeId>2dbd6461-66d2-4a6d-9ced-6d00fce31cfe</xr:TypeId>
+				<xr:ValueId>b3d10a6a-f59c-461a-ae73-ed0674dce895</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПунктыВыдачиЗаказа" category="List">
+				<xr:TypeId>a717bf5e-6266-4d2b-af6c-f9fcbfe028ca</xr:TypeId>
+				<xr:ValueId>a24dc946-23fd-479a-af5c-e3c6b2de002a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПунктыВыдачиЗаказа" category="Manager">
+				<xr:TypeId>bd512ff3-2e6c-46f7-b28e-9b98f050121b</xr:TypeId>
+				<xr:ValueId>3654b162-31d0-4022-b62c-0693cefb487a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПунктыВыдачиЗаказа</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>148b1787-6cef-4ebc-a95c-c4a34aa3f4b5</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

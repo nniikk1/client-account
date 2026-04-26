@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="44ff7f52-3de2-420c-8870-e5ceed82c3ae">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СервисыДоставки" category="Ref">
+				<xr:TypeId>73c59b9e-6327-4450-b26a-ceefd8efd2ba</xr:TypeId>
+				<xr:ValueId>f6e3ba27-5133-447c-ba77-ffc7ba29a3e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СервисыДоставки" category="Manager">
+				<xr:TypeId>7a0dff11-5690-4abc-a7e4-2baec9a3cf02</xr:TypeId>
+				<xr:ValueId>3eb6175a-f3f2-4b63-86ee-278249a28eff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СервисыДоставки" category="List">
+				<xr:TypeId>5d658cb1-3140-4c62-9bdd-914881710123</xr:TypeId>
+				<xr:ValueId>5c4f850a-c357-4e36-b36d-5e4ddde0d0b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СервисыДоставки</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3c9b8c09-5ae3-477f-8554-c8db219fdda0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="08ee3053-37d0-480d-8456-9367360b595b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЯндексДоставка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ad097391-3034-4980-adb5-ec53cc48b57f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b70e2742-7eda-4e8e-be01-6e743bd42665">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сервис1СКурьерика</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>022be48a-ab8c-4787-ab19-39cada14b8a6</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7bddf334-0a23-4464-816d-cf57e2b6fee8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сервис1СДоставка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e4d40c81-fc6e-46c5-8cc4-c9834544a182</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0c6604c3-eb3e-4d17-90bc-38dac3fbc485">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сервис1СКурьер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>72f6b39f-5596-4cac-b583-c022533f6a53</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

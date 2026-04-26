@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="91ea2f78-f3bb-400c-8dab-c2c484777e42">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РекламныеБлокиПечатныхФорм" category="Object">
+				<xr:TypeId>672f0c16-974e-48b8-8a9a-cef2c666945d</xr:TypeId>
+				<xr:ValueId>828fc49c-ba73-4083-acaa-9ceccd1d8e35</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РекламныеБлокиПечатныхФорм" category="Ref">
+				<xr:TypeId>da43fe52-c098-48d8-81cf-e8583c7a95d9</xr:TypeId>
+				<xr:ValueId>7278cd1f-407b-4d99-bd1b-9d074c448acc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РекламныеБлокиПечатныхФорм" category="Selection">
+				<xr:TypeId>ae306e51-8f4a-4f15-a9d6-01b4a9101594</xr:TypeId>
+				<xr:ValueId>e6fcb559-a1f8-4017-8082-1e2af275dec4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РекламныеБлокиПечатныхФорм" category="List">
+				<xr:TypeId>7eabd7d7-06e9-41bc-beb0-0f253dc3f9bb</xr:TypeId>
+				<xr:ValueId>854f6c84-2d28-4de2-a0e6-e237136300c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РекламныеБлокиПечатныхФорм" category="Manager">
+				<xr:TypeId>dc979267-13ca-4b29-992e-867e55302cc3</xr:TypeId>
+				<xr:ValueId>59183b89-c45a-446b-99e2-e5d3f4b1433f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РекламныеБлокиПечатныхФорм</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a7a8b78e-bb69-4429-af93-f3a9d5dd3cbc</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,1787 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КК_СоздатьЗаказ" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КК_СоздатьЗаказ</CommandName>
+				<ExtendedTooltip name="КК_СоздатьЗаказРасширеннаяПодсказка" id="24"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="МоиЗаказы" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>МоиЗаказы</DataPath>
+			<RowPictureDataPath>МоиЗаказы.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="МоиЗаказыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="МоиЗаказыКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="МоиЗаказыРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="МоиЗаказыСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>МоиЗаказы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МоиЗаказыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="МоиЗаказыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МоиЗаказыСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>МоиЗаказы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МоиЗаказыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="МоиЗаказыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МоиЗаказыУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>МоиЗаказы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МоиЗаказыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="МоиЗаказыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">МоиЗаказыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="МоиЗаказыДата" id="14">
+					<DataPath>МоиЗаказы.Дата</DataPath>
+					<ContextMenu name="МоиЗаказыДатаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="МоиЗаказыДатаРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="МоиЗаказыНомер" id="17">
+					<DataPath>МоиЗаказы.Номер</DataPath>
+					<ContextMenu name="МоиЗаказыНомерКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="МоиЗаказыНомерРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="МоиЗаказыКК_СтатусИнтернетЗаказа" id="20">
+					<DataPath>МоиЗаказы.КК_СтатусИнтернетЗаказа</DataPath>
+					<ContextMenu name="МоиЗаказыКК_СтатусИнтернетЗаказаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="МоиЗаказыКК_СтатусИнтернетЗаказаРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КК_РабочееМестоКонтрагента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МоиЗаказы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мои заказы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументЗаказПокупателя.Ссылка КАК Ссылка,
+	ДокументЗаказПокупателя.ПометкаУдаления,
+	ДокументЗаказПокупателя.Номер,
+	ДокументЗаказПокупателя.Дата,
+	ДокументЗаказПокупателя.Проведен,
+	ДокументЗаказПокупателя.КК_СтатусИнтернетЗаказа,
+	ДокументЗаказПокупателя.КК_ИнтернетЗаказ,
+	ДокументЗаказПокупателя.ПочтаПолучателя,
+	ДокументЗаказПокупателя.РекламныйБлокПечтаныхФорм,
+	ДокументЗаказПокупателя.СлужбаДоставки,
+	ДокументЗаказПокупателя.Комментарий,
+	ДокументЗаказПокупателя.ДатаПоступления,
+	ДокументЗаказПокупателя.ВариантЗавершения,
+	ДокументЗаказПокупателя.ВремяДоставкиС,
+	ДокументЗаказПокупателя.СпособЗачетаПредоплаты,
+	ДокументЗаказПокупателя.Заметки,
+	ДокументЗаказПокупателя.НоменклатураДоставки,
+	ДокументЗаказПокупателя.СтруктурнаяЕдиницаПродажи,
+	ДокументЗаказПокупателя.КассаККМ,
+	ДокументЗаказПокупателя.Лид,
+	ДокументЗаказПокупателя.СтавкаНДСДоставки,
+	ДокументЗаказПокупателя.ПунктВыдачиЗаказа,
+	ДокументЗаказПокупателя.Курьер,
+	ДокументЗаказПокупателя.Вес,
+	ДокументЗаказПокупателя.ЗапаснойТелефон,
+	ДокументЗаказПокупателя.ТипДенежныхСредств,
+	ДокументЗаказПокупателя.ДатаЗакрывающегоДокументаВыставлениеСчетов,
+	ДокументЗаказПокупателя.ОбъявленнаяЦенность,
+	ДокументЗаказПокупателя.Объем,
+	ДокументЗаказПокупателя.ВидЭлектронногоДокумента,
+	ДокументЗаказПокупателя.Длина,
+	ДокументЗаказПокупателя.ИсточникПривлечения,
+	ДокументЗаказПокупателя.ВидЗакрывающегоДокументаВыставлениеСчетов,
+	ДокументЗаказПокупателя.СтруктурнаяЕдиницаРезерв,
+	ДокументЗаказПокупателя.СпособДоставки,
+	ДокументЗаказПокупателя.КонтактноеЛицо,
+	ДокументЗаказПокупателя.ОжидаемаяДатаВручения,
+	ДокументЗаказПокупателя.СтоимостьДоставки,
+	ДокументЗаказПокупателя.Автор,
+	ДокументЗаказПокупателя.Ширина,
+	ДокументЗаказПокупателя.НомерЗакрывающегоДокументаВыставлениеСчетов,
+	ДокументЗаказПокупателя.ТрекНомер,
+	ДокументЗаказПокупателя.ПодписьРуководителя,
+	ДокументЗаказПокупателя.Проект,
+	ДокументЗаказПокупателя.СостояниеЗаказа,
+	ДокументЗаказПокупателя.ВремяДоставкиПо,
+	ДокументЗаказПокупателя.ВидОперации,
+	ДокументЗаказПокупателя.ИспользоватьСкидкиВыставлениеСчетов,
+	ДокументЗаказПокупателя.ВидЗаказа,
+	ДокументЗаказПокупателя.ЗапланироватьОплату,
+	ДокументЗаказПокупателя.Договор,
+	ДокументЗаказПокупателя.ЗонаТариф,
+	ДокументЗаказПокупателя.БанковскийСчет,
+	ДокументЗаказПокупателя.Организация,
+	ДокументЗаказПокупателя.КонтактныйТелефон,
+	ДокументЗаказПокупателя.Контрагент,
+	ДокументЗаказПокупателя.ОплаченВВыставленииСчетов,
+	ДокументЗаказПокупателя.Событие,
+	ДокументЗаказПокупателя.Ответственный,
+	ДокументЗаказПокупателя.АдресСайта,
+	ДокументЗаказПокупателя.СервисДоставки,
+	ДокументЗаказПокупателя.Касса,
+	ДокументЗаказПокупателя.Грузоотправитель,
+	ДокументЗаказПокупателя.АдресДоставки,
+	ДокументЗаказПокупателя.ТекстУсловийСчетаЗаказа,
+	ДокументЗаказПокупателя.ПодписьГлавногоБухгалтера,
+	ДокументЗаказПокупателя.ПричинаОтмены,
+	ДокументЗаказПокупателя.ДополнительнаяИнформацияПоДоставке,
+	ДокументЗаказПокупателя.Грузополучатель,
+	ДокументЗаказПокупателя.ОплатаДо,
+	ДокументЗаказПокупателя.ОтгруженВВыставленииСчетов,
+	ДокументЗаказПокупателя.ДатаОтгрузки,
+	ДокументЗаказПокупателя.СуммаНДСДоставки,
+	ДокументЗаказПокупателя.Высота,
+	ДокументЗаказПокупателя.СебестоимостьДоставки,
+	ДокументЗаказПокупателя.БонусныеБаллыКНачислению,
+	ДокументЗаказПокупателя.Запасы,
+	ДокументЗаказПокупателя.Предоплата,
+	ДокументЗаказПокупателя.МатериалыЗаказчика,
+	ДокументЗаказПокупателя.ПлатежныйКалендарь,
+	ДокументЗаказПокупателя.Подарки,
+	ДокументЗаказПокупателя.ОтмененныеЗапасы,
+	ДокументЗаказПокупателя.Работы,
+	ДокументЗаказПокупателя.Калькуляция,
+	ДокументЗаказПокупателя.Материалы,
+	ДокументЗаказПокупателя.СкидкиНаценки,
+	ДокументЗаказПокупателя.МоментВремени
+ИЗ
+	Документ.ЗаказПокупателя КАК ДокументЗаказПокупателя
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.ЗначениеСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.ЗначениеСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.СкидкаНаценка</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.СкидкаНаценка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Материалы</dcssch:dataPath>
+					<dcssch:field>Материалы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Содержание</dcssch:dataPath>
+					<dcssch:field>Материалы.Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.ИдентификаторСтроки</dcssch:dataPath>
+					<dcssch:field>Материалы.ИдентификаторСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.ПрослеживаемыйТовар</dcssch:dataPath>
+					<dcssch:field>Материалы.ПрослеживаемыйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Ячейка</dcssch:dataPath>
+					<dcssch:field>Материалы.Ячейка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.СтранаПроисхождения</dcssch:dataPath>
+					<dcssch:field>Материалы.СтранаПроисхождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>Материалы.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.РезервОтгрузка</dcssch:dataPath>
+					<dcssch:field>Материалы.РезервОтгрузка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Партия</dcssch:dataPath>
+					<dcssch:field>Материалы.Партия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Ссылка</dcssch:dataPath>
+					<dcssch:field>Материалы.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.РучноеИзменение</dcssch:dataPath>
+					<dcssch:field>Калькуляция.РучноеИзменение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>Калькуляция.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.НоменклатураИзделие</dcssch:dataPath>
+					<dcssch:field>Калькуляция.НоменклатураИзделие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Себестоимость</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Себестоимость</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>Калькуляция.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Количество</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Номенклатура</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Калькуляция.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Работы</dcssch:dataPath>
+					<dcssch:field>Работы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.КодТНВЭД</dcssch:dataPath>
+					<dcssch:field>Материалы.КодТНВЭД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ПрослеживаемыйКомплект</dcssch:dataPath>
+					<dcssch:field>Работы.ПрослеживаемыйКомплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.НомерГТД</dcssch:dataPath>
+					<dcssch:field>Материалы.НомерГТД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ПрослеживаемыйТовар</dcssch:dataPath>
+					<dcssch:field>Работы.ПрослеживаемыйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ДоляСтоимости</dcssch:dataPath>
+					<dcssch:field>Работы.ДоляСтоимости</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.НоменклатураНабора</dcssch:dataPath>
+					<dcssch:field>Работы.НоменклатураНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ПроцентАвтоматическойСкидки</dcssch:dataPath>
+					<dcssch:field>Работы.ПроцентАвтоматическойСкидки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Коэффициент</dcssch:dataPath>
+					<dcssch:field>Работы.Коэффициент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ПроцентСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>Работы.ПроцентСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Сумма</dcssch:dataPath>
+					<dcssch:field>Работы.Сумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Цена</dcssch:dataPath>
+					<dcssch:field>Работы.Цена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Количество</dcssch:dataPath>
+					<dcssch:field>Работы.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Спецификация</dcssch:dataPath>
+					<dcssch:field>Работы.Спецификация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ТипНоменклатурыУслуга</dcssch:dataPath>
+					<dcssch:field>Работы.ТипНоменклатурыУслуга</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ОтмененныеЗапасы</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.НоменклатураНабора</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.НоменклатураНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ЭтоРабота</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ЭтоРабота</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Кратность</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Кратность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.СтавкаНДС</dcssch:dataPath>
+					<dcssch:field>Работы.СтавкаНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.СтранаПроисхождения</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.СтранаПроисхождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Содержание</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Автор</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Ссылка</dcssch:dataPath>
+					<dcssch:field>Работы.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Цена</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Цена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.СебестоимостьЕдиницы</dcssch:dataPath>
+					<dcssch:field>Калькуляция.СебестоимостьЕдиницы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.СтруктурнаяЕдиницаРезерв</dcssch:dataPath>
+					<dcssch:field>Материалы.СтруктурнаяЕдиницаРезерв</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Количество</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Характеристика</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Подарки</dcssch:dataPath>
+					<dcssch:field>Подарки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>Подарки.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Ячейка</dcssch:dataPath>
+					<dcssch:field>Подарки.Ячейка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Сумма</dcssch:dataPath>
+					<dcssch:field>Подарки.Сумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Цена</dcssch:dataPath>
+					<dcssch:field>Подарки.Цена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Характеристика</dcssch:dataPath>
+					<dcssch:field>Подарки.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Номенклатура</dcssch:dataPath>
+					<dcssch:field>Подарки.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.СкидкаНаценка</dcssch:dataPath>
+					<dcssch:field>Подарки.СкидкаНаценка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Подарки.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Ссылка</dcssch:dataPath>
+					<dcssch:field>Подарки.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.СуммаНДСОплаты</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.СуммаНДСОплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.ПроцентОплаты</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.ПроцентОплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.ДатаОплаты</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.ДатаОплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.Ссылка</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Комментарий</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.ДатаПоступления</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.ДатаПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Количество</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Предоплата</dcssch:dataPath>
+					<dcssch:field>Предоплата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.ОплатаБонусами</dcssch:dataPath>
+					<dcssch:field>Предоплата.ОплатаБонусами</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.ЭтоПредоплатаБезЗаказа</dcssch:dataPath>
+					<dcssch:field>Предоплата.ЭтоПредоплатаБезЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.Кратность</dcssch:dataPath>
+					<dcssch:field>Предоплата.Кратность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Предоплата.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ПродажаПодарка</dcssch:dataPath>
+					<dcssch:field>Запасы.ПродажаПодарка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ПрослеживаемыйКомплект</dcssch:dataPath>
+					<dcssch:field>Запасы.ПрослеживаемыйКомплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ИдентификаторСтроки</dcssch:dataPath>
+					<dcssch:field>Запасы.ИдентификаторСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.КодТНВЭД</dcssch:dataPath>
+					<dcssch:field>Запасы.КодТНВЭД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.КоличествоСобрано</dcssch:dataPath>
+					<dcssch:field>Запасы.КоличествоСобрано</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СтруктурнаяЕдиницаРезерв</dcssch:dataPath>
+					<dcssch:field>Запасы.СтруктурнаяЕдиницаРезерв</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ДоляСтоимости</dcssch:dataPath>
+					<dcssch:field>Запасы.ДоляСтоимости</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.НомерВариантаКП</dcssch:dataPath>
+					<dcssch:field>Калькуляция.НомерВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Резерв</dcssch:dataPath>
+					<dcssch:field>Материалы.Резерв</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ХарактеристикаНабора</dcssch:dataPath>
+					<dcssch:field>Запасы.ХарактеристикаНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ЭтоРазделитель</dcssch:dataPath>
+					<dcssch:field>Запасы.ЭтоРазделитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.НомерВариантаКП</dcssch:dataPath>
+					<dcssch:field>Запасы.НомерВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Объем</dcssch:dataPath>
+					<dcssch:field>Запасы.Объем</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Спецификация</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Спецификация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Вес</dcssch:dataPath>
+					<dcssch:field>Запасы.Вес</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ПлатежныйКалендарь</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.ДокументПоступления</dcssch:dataPath>
+					<dcssch:field>Материалы.ДокументПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Партия</dcssch:dataPath>
+					<dcssch:field>Запасы.Партия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.НомерГТД</dcssch:dataPath>
+					<dcssch:field>Запасы.НомерГТД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СтранаПроисхождения</dcssch:dataPath>
+					<dcssch:field>Запасы.СтранаПроисхождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>Запасы.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Количество</dcssch:dataPath>
+					<dcssch:field>Запасы.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СуммаАвтоматическойСкидки</dcssch:dataPath>
+					<dcssch:field>Запасы.СуммаАвтоматическойСкидки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Содержание</dcssch:dataPath>
+					<dcssch:field>Работы.Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Содержание</dcssch:dataPath>
+					<dcssch:field>Запасы.Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ПрослеживаемыйТовар</dcssch:dataPath>
+					<dcssch:field>Запасы.ПрослеживаемыйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Спецификация</dcssch:dataPath>
+					<dcssch:field>Запасы.Спецификация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ДатаОтгрузки</dcssch:dataPath>
+					<dcssch:field>Запасы.ДатаОтгрузки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Количество</dcssch:dataPath>
+					<dcssch:field>Материалы.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Всего</dcssch:dataPath>
+					<dcssch:field>Запасы.Всего</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СуммаНДС</dcssch:dataPath>
+					<dcssch:field>Запасы.СуммаНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Сумма</dcssch:dataPath>
+					<dcssch:field>Запасы.Сумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидимостьИндикатораТребуетсяРасчет</dcssch:dataPath>
+					<dcssch:field>ВидимостьИндикатораТребуетсяРасчет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ПроцентСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>Запасы.ПроцентСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Характеристика</dcssch:dataPath>
+					<dcssch:field>Работы.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>Запасы.ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Кратность</dcssch:dataPath>
+					<dcssch:field>Кратность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Характеристика</dcssch:dataPath>
+					<dcssch:field>Запасы.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодписьКладовщика</dcssch:dataPath>
+					<dcssch:field>ПодписьКладовщика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Запасы.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>МатериалыЗаказчика</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ПричинаОтмены</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ПричинаОтмены</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.ХарактеристикаИзделие</dcssch:dataPath>
+					<dcssch:field>Калькуляция.ХарактеристикаИзделие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Старт</dcssch:dataPath>
+					<dcssch:field>Старт</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>БонусныеБаллыКНачислению</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Источник</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Источник</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗонаТариф</dcssch:dataPath>
+					<dcssch:field>ЗонаТариф</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтгруженВВыставленииСчетов</dcssch:dataPath>
+					<dcssch:field>ОтгруженВВыставленииСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.НомерВариантаКП</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.НомерВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.КоличествоБонусныхБаллов</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.КоличествоБонусныхБаллов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПоступления</dcssch:dataPath>
+					<dcssch:field>ДатаПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.ДатаНачисления</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.ДатаНачисления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Высота</dcssch:dataPath>
+					<dcssch:field>Высота</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.СкидкаНаценка</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.СкидкаНаценка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.Ссылка</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Материалы.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТоварыПередаютсяВСоставеРабот</dcssch:dataPath>
+					<dcssch:field>ТоварыПередаютсяВСоставеРабот</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.НомерСертификата</dcssch:dataPath>
+					<dcssch:field>Предоплата.НомерСертификата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ширина</dcssch:dataPath>
+					<dcssch:field>Ширина</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактныйТелефон</dcssch:dataPath>
+					<dcssch:field>КонтактныйТелефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаОтгрузки</dcssch:dataPath>
+					<dcssch:field>ДатаОтгрузки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.КлючСвязиСерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>Материалы.КлючСвязиСерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПричинаОтмены</dcssch:dataPath>
+					<dcssch:field>ПричинаОтмены</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодписьГлавногоБухгалтера</dcssch:dataPath>
+					<dcssch:field>ПодписьГлавногоБухгалтера</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекстУсловийСчетаЗаказа</dcssch:dataPath>
+					<dcssch:field>ТекстУсловийСчетаЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресДоставки</dcssch:dataPath>
+					<dcssch:field>АдресДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.СуммаПогашенияСертификата</dcssch:dataPath>
+					<dcssch:field>Предоплата.СуммаПогашенияСертификата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ВидРабот</dcssch:dataPath>
+					<dcssch:field>Работы.ВидРабот</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РеквизитыПараметрическихСпецификаций</dcssch:dataPath>
+					<dcssch:field>РеквизитыПараметрическихСпецификаций</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СервисДоставки</dcssch:dataPath>
+					<dcssch:field>СервисДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресСайта</dcssch:dataPath>
+					<dcssch:field>АдресСайта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактноеЛицо</dcssch:dataPath>
+					<dcssch:field>КонтактноеЛицо</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ответственный</dcssch:dataPath>
+					<dcssch:field>Ответственный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Количество</dcssch:dataPath>
+					<dcssch:field>Подарки.Количество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОплатаДо</dcssch:dataPath>
+					<dcssch:field>ОплатаДо</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БанковскийСчет</dcssch:dataPath>
+					<dcssch:field>БанковскийСчет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Событие</dcssch:dataPath>
+					<dcssch:field>Событие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.ОплатаСертификатом</dcssch:dataPath>
+					<dcssch:field>Предоплата.ОплатаСертификатом</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьТовары</dcssch:dataPath>
+					<dcssch:field>ИспользоватьТовары</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерВходящегоДокумента</dcssch:dataPath>
+					<dcssch:field>НомерВходящегоДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.СтатусУказанияСерий</dcssch:dataPath>
+					<dcssch:field>Подарки.СтатусУказанияСерий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.НомерВариантаКП</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.НомерВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидОперации</dcssch:dataPath>
+					<dcssch:field>ВидОперации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Характеристика</dcssch:dataPath>
+					<dcssch:field>Материалы.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтоимостьДоставки</dcssch:dataPath>
+					<dcssch:field>СтоимостьДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.КлючСвязиДляСкидокНаценок</dcssch:dataPath>
+					<dcssch:field>Работы.КлючСвязиДляСкидокНаценок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидЗакрывающегоДокументаВыставлениеСчетов</dcssch:dataPath>
+					<dcssch:field>ВидЗакрывающегоДокументаВыставлениеСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИсточникПривлечения</dcssch:dataPath>
+					<dcssch:field>ИсточникПривлечения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.СуммаОплаты</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.СуммаОплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоверенностьВыдана</dcssch:dataPath>
+					<dcssch:field>ДоверенностьВыдана</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДенежныхСредств</dcssch:dataPath>
+					<dcssch:field>ТипДенежныхСредств</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапаснойТелефон</dcssch:dataPath>
+					<dcssch:field>ЗапаснойТелефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.Номенклатура</dcssch:dataPath>
+					<dcssch:field>Материалы.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Вес</dcssch:dataPath>
+					<dcssch:field>Вес</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СведенияПрослеживаемости</dcssch:dataPath>
+					<dcssch:field>СведенияПрослеживаемости</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидЗаказа</dcssch:dataPath>
+					<dcssch:field>ВидЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Калькуляция</dcssch:dataPath>
+					<dcssch:field>Калькуляция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапланироватьОплату</dcssch:dataPath>
+					<dcssch:field>ЗапланироватьОплату</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидЦен</dcssch:dataPath>
+					<dcssch:field>ВидЦен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Курьер</dcssch:dataPath>
+					<dcssch:field>Курьер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.Ссылка</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеЗаказа</dcssch:dataPath>
+					<dcssch:field>СостояниеЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПунктВыдачиЗаказа</dcssch:dataPath>
+					<dcssch:field>ПунктВыдачиЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ДокументПоступления</dcssch:dataPath>
+					<dcssch:field>Запасы.ДокументПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтавкаНДСДоставки</dcssch:dataPath>
+					<dcssch:field>СтавкаНДСДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.СостояниеОтмены</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.СостояниеОтмены</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Лид</dcssch:dataPath>
+					<dcssch:field>Лид</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Кратность</dcssch:dataPath>
+					<dcssch:field>Работы.Кратность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Ссылка</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтруктурнаяЕдиницаПродажи</dcssch:dataPath>
+					<dcssch:field>СтруктурнаяЕдиницаПродажи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СтавкаНДС</dcssch:dataPath>
+					<dcssch:field>Запасы.СтавкаНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заметки</dcssch:dataPath>
+					<dcssch:field>Заметки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Номенклатура</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВремяДоставкиС</dcssch:dataPath>
+					<dcssch:field>ВремяДоставкиС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БонусныеБаллыКНачислению.ДатаСписания</dcssch:dataPath>
+					<dcssch:field>БонусныеБаллыКНачислению.ДатаСписания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Ссылка</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВариантЗавершения</dcssch:dataPath>
+					<dcssch:field>ВариантЗавершения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.Справка2</dcssch:dataPath>
+					<dcssch:field>Подарки.Справка2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>Работы.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Номенклатура</dcssch:dataPath>
+					<dcssch:field>Запасы.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РекламныйБлокПечтаныхФорм</dcssch:dataPath>
+					<dcssch:field>РекламныйБлокПечтаныхФорм</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительнаяИнформацияПоДоставке</dcssch:dataPath>
+					<dcssch:field>ДополнительнаяИнформацияПоДоставке</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Резерв</dcssch:dataPath>
+					<dcssch:field>Запасы.Резерв</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ИдентификаторСтроки</dcssch:dataPath>
+					<dcssch:field>Работы.ИдентификаторСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СлужбаДоставки</dcssch:dataPath>
+					<dcssch:field>СлужбаДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.ВыдачаПодаркаОтменена</dcssch:dataPath>
+					<dcssch:field>Подарки.ВыдачаПодаркаОтменена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Грузоотправитель</dcssch:dataPath>
+					<dcssch:field>Грузоотправитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.СерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>Подарки.СерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьЗарплатаИсполнителей</dcssch:dataPath>
+					<dcssch:field>ИспользоватьЗарплатаИсполнителей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СуммаСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>Запасы.СуммаСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШтрихкодыУпаковок</dcssch:dataPath>
+					<dcssch:field>ШтрихкодыУпаковок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.Ссылка</dcssch:dataPath>
+					<dcssch:field>Предоплата.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПримененныеПромокоды</dcssch:dataPath>
+					<dcssch:field>ПримененныеПромокоды</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>Подарки.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.Сумма</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.Сумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоУниверсальныйДокумент</dcssch:dataPath>
+					<dcssch:field>ЭтоУниверсальныйДокумент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидыЦенКалькуляции</dcssch:dataPath>
+					<dcssch:field>ВидыЦенКалькуляции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Ячейка</dcssch:dataPath>
+					<dcssch:field>Запасы.Ячейка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.ХарактеристикаНабора</dcssch:dataPath>
+					<dcssch:field>Работы.ХарактеристикаНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Спецификация</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Спецификация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КассаККМ</dcssch:dataPath>
+					<dcssch:field>КассаККМ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.НомерГТД</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.НомерГТД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПараметрыДоставки</dcssch:dataPath>
+					<dcssch:field>ПараметрыДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>СерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Коэффициент</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Коэффициент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособОтгрузки</dcssch:dataPath>
+					<dcssch:field>СпособОтгрузки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаЗакрывающегоДокументаВыставлениеСчетов</dcssch:dataPath>
+					<dcssch:field>ДатаЗакрывающегоДокументаВыставлениеСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИнформацияПоКонтрагенту</dcssch:dataPath>
+					<dcssch:field>ИнформацияПоКонтрагенту</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УсловияЗаказаПокупателя</dcssch:dataPath>
+					<dcssch:field>УсловияЗаказаПокупателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Характеристика</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РесурсыПредприятия</dcssch:dataPath>
+					<dcssch:field>РесурсыПредприятия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнители</dcssch:dataPath>
+					<dcssch:field>Исполнители</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусСборки</dcssch:dataPath>
+					<dcssch:field>СтатусСборки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НетСтрокВДокументе</dcssch:dataPath>
+					<dcssch:field>НетСтрокВДокументе</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерЗакрывающегоДокументаВыставлениеСчетов</dcssch:dataPath>
+					<dcssch:field>НомерЗакрывающегоДокументаВыставлениеСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.НоменклатураНабора</dcssch:dataPath>
+					<dcssch:field>Запасы.НоменклатураНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Перевозчик</dcssch:dataPath>
+					<dcssch:field>Перевозчик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Телефон</dcssch:dataPath>
+					<dcssch:field>Телефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РегистрироватьЦеныПродажи</dcssch:dataPath>
+					<dcssch:field>РегистрироватьЦеныПродажи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоложениеДокументаПоступления</dcssch:dataPath>
+					<dcssch:field>ПоложениеДокументаПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.НормаВремени</dcssch:dataPath>
+					<dcssch:field>Калькуляция.НормаВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОжидаетсяВыборВариантаКП</dcssch:dataPath>
+					<dcssch:field>ОжидаетсяВыборВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументПоступления</dcssch:dataPath>
+					<dcssch:field>ДокументПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Грузополучатель</dcssch:dataPath>
+					<dcssch:field>Грузополучатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СписокРесурсов</dcssch:dataPath>
+					<dcssch:field>СписокРесурсов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СерииПодарков</dcssch:dataPath>
+					<dcssch:field>СерииПодарков</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>Материалы.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекстУсловийКоммерческогоПредложения</dcssch:dataPath>
+					<dcssch:field>ТекстУсловийКоммерческогоПредложения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СсылкаДляОплаты</dcssch:dataPath>
+					<dcssch:field>СсылкаДляОплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Цена</dcssch:dataPath>
+					<dcssch:field>Запасы.Цена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ХарактеристикаНабора</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ХарактеристикаНабора</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УчетПотребностиПоСкладам</dcssch:dataPath>
+					<dcssch:field>УчетПотребностиПоСкладам</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СозданИзКабинетаКлиента</dcssch:dataPath>
+					<dcssch:field>СозданИзКабинетаКлиента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.СуммаНДС</dcssch:dataPath>
+					<dcssch:field>Работы.СуммаНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КалькуляцияРассчитана</dcssch:dataPath>
+					<dcssch:field>КалькуляцияРассчитана</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаНДСДоставки</dcssch:dataPath>
+					<dcssch:field>СуммаНДСДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.Документ</dcssch:dataPath>
+					<dcssch:field>Предоплата.Документ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Прицеп</dcssch:dataPath>
+					<dcssch:field>Прицеп</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.СпецификацияИзделие</dcssch:dataPath>
+					<dcssch:field>Калькуляция.СпецификацияИзделие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДобавленныеНаборы</dcssch:dataPath>
+					<dcssch:field>ДобавленныеНаборы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Финиш</dcssch:dataPath>
+					<dcssch:field>Финиш</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автомобиль</dcssch:dataPath>
+					<dcssch:field>Автомобиль</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Водитель</dcssch:dataPath>
+					<dcssch:field>Водитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СерииНоменклатурыМатериалы</dcssch:dataPath>
+					<dcssch:field>СерииНоменклатурыМатериалы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ячейка</dcssch:dataPath>
+					<dcssch:field>Ячейка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Работы.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Объем</dcssch:dataPath>
+					<dcssch:field>Объем</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ХозяйственнаяОперация</dcssch:dataPath>
+					<dcssch:field>ХозяйственнаяОперация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВыбранныеУправляемыеСкидки</dcssch:dataPath>
+					<dcssch:field>ВыбранныеУправляемыеСкидки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШаблонКалькуляции</dcssch:dataPath>
+					<dcssch:field>ШаблонКалькуляции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодписьРуководителя</dcssch:dataPath>
+					<dcssch:field>ПодписьРуководителя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УсловияСчетаЗаказа</dcssch:dataPath>
+					<dcssch:field>УсловияСчетаЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Партия</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Партия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.СерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>Материалы.СерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.КлючСвязи</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.КлючСвязи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УсловияГарантийногоТалона</dcssch:dataPath>
+					<dcssch:field>УсловияГарантийногоТалона</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.РезервОтгрузка</dcssch:dataPath>
+					<dcssch:field>Запасы.РезервОтгрузка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.СерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.СерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьИспользоватьФаксимиле</dcssch:dataPath>
+					<dcssch:field>УдалитьИспользоватьФаксимиле</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыЗаказчика.Содержание</dcssch:dataPath>
+					<dcssch:field>МатериалыЗаказчика.Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОжидаемаяДатаВручения</dcssch:dataPath>
+					<dcssch:field>ОжидаемаяДатаВручения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Курс</dcssch:dataPath>
+					<dcssch:field>Курс</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СписокНоменклатуры</dcssch:dataPath>
+					<dcssch:field>СписокНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.СтруктурнаяЕдиница</dcssch:dataPath>
+					<dcssch:field>Подарки.СтруктурнаяЕдиница</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьЗакрыт</dcssch:dataPath>
+					<dcssch:field>УдалитьЗакрыт</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъявленнаяЦенность</dcssch:dataPath>
+					<dcssch:field>ОбъявленнаяЦенность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СуммаСкидкиОплатыБонусом</dcssch:dataPath>
+					<dcssch:field>Запасы.СуммаСкидкиОплатыБонусом</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаВключаетНДС</dcssch:dataPath>
+					<dcssch:field>СуммаВключаетНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторНаправленияДоставки</dcssch:dataPath>
+					<dcssch:field>ИдентификаторНаправленияДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособРасчетаСебестоимостиКалькуляции</dcssch:dataPath>
+					<dcssch:field>СпособРасчетаСебестоимостиКалькуляции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Длина</dcssch:dataPath>
+					<dcssch:field>Длина</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Номенклатура</dcssch:dataPath>
+					<dcssch:field>Работы.Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Касса</dcssch:dataPath>
+					<dcssch:field>Касса</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоложениеСклада</dcssch:dataPath>
+					<dcssch:field>ПоложениеСклада</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерСменыККМ</dcssch:dataPath>
+					<dcssch:field>НомерСменыККМ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.СуммаРасчетов</dcssch:dataPath>
+					<dcssch:field>Предоплата.СуммаРасчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроцентСкидкиПоДисконтнойКарте</dcssch:dataPath>
+					<dcssch:field>ПроцентСкидкиПоДисконтнойКарте</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОснованиеПечати</dcssch:dataPath>
+					<dcssch:field>ОснованиеПечати</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СебестоимостьДоставки</dcssch:dataPath>
+					<dcssch:field>СебестоимостьДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторПлатежа</dcssch:dataPath>
+					<dcssch:field>ИдентификаторПлатежа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОсновнойВариантКП</dcssch:dataPath>
+					<dcssch:field>ОсновнойВариантКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ТипНоменклатурыЗапас</dcssch:dataPath>
+					<dcssch:field>Запасы.ТипНоменклатурыЗапас</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоверенностьНомер</dcssch:dataPath>
+					<dcssch:field>ДоверенностьНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УсловияКоммерческогоПредложения</dcssch:dataPath>
+					<dcssch:field>УсловияКоммерческогоПредложения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КомментарийКалькуляции</dcssch:dataPath>
+					<dcssch:field>КомментарийКалькуляции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.СерииНоменклатуры</dcssch:dataPath>
+					<dcssch:field>Запасы.СерииНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиНаценки.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерЧекаККМ</dcssch:dataPath>
+					<dcssch:field>НомерЧекаККМ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.Курс</dcssch:dataPath>
+					<dcssch:field>Предоплата.Курс</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.НомерВариантаКП</dcssch:dataPath>
+					<dcssch:field>Подарки.НомерВариантаКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>СкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>СкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодписьКассира</dcssch:dataPath>
+					<dcssch:field>ПодписьКассира</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подарки.ШтрихкодУпаковки</dcssch:dataPath>
+					<dcssch:field>Подарки.ШтрихкодУпаковки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодОперацииПрослеживаемости</dcssch:dataPath>
+					<dcssch:field>КодОперацииПрослеживаемости</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Характеристика</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НДСВключатьВСтоимость</dcssch:dataPath>
+					<dcssch:field>НДСВключатьВСтоимость</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДисконтнаяКарта</dcssch:dataPath>
+					<dcssch:field>ДисконтнаяКарта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НалогообложениеНДС</dcssch:dataPath>
+					<dcssch:field>НалогообложениеНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.ПроцентАвтоматическойСкидки</dcssch:dataPath>
+					<dcssch:field>Запасы.ПроцентАвтоматическойСкидки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекстУсловийГарантийногоТалона</dcssch:dataPath>
+					<dcssch:field>ТекстУсловийГарантийногоТалона</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособЗачетаПредоплаты</dcssch:dataPath>
+					<dcssch:field>СпособЗачетаПредоплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВремяДоставкиПо</dcssch:dataPath>
+					<dcssch:field>ВремяДоставкиПо</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактноеЛицоПодписант</dcssch:dataPath>
+					<dcssch:field>КонтактноеЛицоПодписант</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьМатериалыЗаказчика</dcssch:dataPath>
+					<dcssch:field>ИспользоватьМатериалыЗаказчика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресДоставкиЗначенияПолей</dcssch:dataPath>
+					<dcssch:field>АдресДоставкиЗначенияПолей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОснованиеПечатиСсылка</dcssch:dataPath>
+					<dcssch:field>ОснованиеПечатиСсылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоверенностьДата</dcssch:dataPath>
+					<dcssch:field>ДоверенностьДата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КК_ИнтернетЗаказ</dcssch:dataPath>
+					<dcssch:field>КК_ИнтернетЗаказ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособДоставки</dcssch:dataPath>
+					<dcssch:field>СпособДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьМатериалы</dcssch:dataPath>
+					<dcssch:field>ИспользоватьМатериалы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоВариантовКП</dcssch:dataPath>
+					<dcssch:field>КоличествоВариантовКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Запасы</dcssch:dataPath>
+					<dcssch:field>Запасы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВалютаДокумента</dcssch:dataPath>
+					<dcssch:field>ВалютаДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.СуммаСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>Работы.СуммаСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресДоставкиЗначение</dcssch:dataPath>
+					<dcssch:field>АдресДоставкиЗначение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КК_СтатусИнтернетЗаказа</dcssch:dataPath>
+					<dcssch:field>КК_СтатусИнтернетЗаказа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлатежныйКалендарь.Постфикс</dcssch:dataPath>
+					<dcssch:field>ПлатежныйКалендарь.Постфикс</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоверенностьЛицо</dcssch:dataPath>
+					<dcssch:field>ДоверенностьЛицо</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.Всего</dcssch:dataPath>
+					<dcssch:field>Работы.Всего</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоложениеДатыПоступления</dcssch:dataPath>
+					<dcssch:field>ПоложениеДатыПоступления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.СуммаАвтоматическойСкидки</dcssch:dataPath>
+					<dcssch:field>Работы.СуммаАвтоматическойСкидки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Запасы.Ссылка</dcssch:dataPath>
+					<dcssch:field>Запасы.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Работы.СуммаСкидкиОплатыБонусом</dcssch:dataPath>
+					<dcssch:field>Работы.СуммаСкидкиОплатыБонусом</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкидкиРассчитаны</dcssch:dataPath>
+					<dcssch:field>СкидкиРассчитаны</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаДокумента</dcssch:dataPath>
+					<dcssch:field>СуммаДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаВходящегоДокумента</dcssch:dataPath>
+					<dcssch:field>ДатаВходящегоДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТрекНомер</dcssch:dataPath>
+					<dcssch:field>ТрекНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Ссылка</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьСкидкиВыставлениеСчетов</dcssch:dataPath>
+					<dcssch:field>ИспользоватьСкидкиВыставлениеСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоложениеДатыОтгрузки</dcssch:dataPath>
+					<dcssch:field>ПоложениеДатыОтгрузки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтруктурнаяЕдиницаРезерв</dcssch:dataPath>
+					<dcssch:field>СтруктурнаяЕдиницаРезерв</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ПрослеживаемыйТовар</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ПрослеживаемыйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекстУсловийЗаказаПокупателя</dcssch:dataPath>
+					<dcssch:field>ТекстУсловийЗаказаПокупателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидСкидкиНаценки</dcssch:dataPath>
+					<dcssch:field>ВидСкидкиНаценки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументОснование</dcssch:dataPath>
+					<dcssch:field>ДокументОснование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НоменклатураДоставки</dcssch:dataPath>
+					<dcssch:field>НоменклатураДоставки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидЭлектронногоДокумента</dcssch:dataPath>
+					<dcssch:field>ВидЭлектронногоДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпециальныйНалоговыйРежим</dcssch:dataPath>
+					<dcssch:field>СпециальныйНалоговыйРежим</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПочтаПолучателя</dcssch:dataPath>
+					<dcssch:field>ПочтаПолучателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предоплата.СуммаПлатежа</dcssch:dataPath>
+					<dcssch:field>Предоплата.СуммаПлатежа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоложениеВидаРабот</dcssch:dataPath>
+					<dcssch:field>ПоложениеВидаРабот</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БанковскийСчетКонтрагента</dcssch:dataPath>
+					<dcssch:field>БанковскийСчетКонтрагента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Калькуляция.Этап</dcssch:dataPath>
+					<dcssch:field>Калькуляция.Этап</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаИзменения</dcssch:dataPath>
+					<dcssch:field>ДатаИзменения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.ДатаОтмены</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.ДатаОтмены</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УчетПотребностиПоЗаказам</dcssch:dataPath>
+					<dcssch:field>УчетПотребностиПоЗаказам</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Материалы.ПрослеживаемыйКомплект</dcssch:dataPath>
+					<dcssch:field>Материалы.ПрослеживаемыйКомплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОплаченВВыставленииСчетов</dcssch:dataPath>
+					<dcssch:field>ОплаченВВыставленииСчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РасчетКалькуляцииПоДаннымТЧ</dcssch:dataPath>
+					<dcssch:field>РасчетКалькуляцииПоДаннымТЧ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УчитыватьВНУ</dcssch:dataPath>
+					<dcssch:field>УчитыватьВНУ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидРабот</dcssch:dataPath>
+					<dcssch:field>ВидРабот</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресЭП</dcssch:dataPath>
+					<dcssch:field>АдресЭП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтмененныеЗапасы.Номенклатура</dcssch:dataPath>
+					<dcssch:field>ОтмененныеЗапасы.Номенклатура</dcssch:field>
+				</Field>
+				<MainTable>Document.ЗаказПокупателя</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийКонтрагент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeId>b692a3bc-f9d8-4bec-836e-67bb38767199</v8:TypeId>
+			</Type>
+		</Attribute>
+		<Attribute name="Ссылка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КК_СоздатьЗаказ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать заказ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К к создать заказ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЗаказ</Action>
+		</Command>
+	</Commands>
+</Form>

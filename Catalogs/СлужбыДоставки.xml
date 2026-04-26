@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="48128d16-5abb-46d2-be0d-d0e7cb9e9617">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СлужбыДоставки" category="Object">
+				<xr:TypeId>3de91ab8-05f7-4c07-8d56-f74e0b036fe9</xr:TypeId>
+				<xr:ValueId>26c20208-6e08-4f41-b429-58826ab2eac4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СлужбыДоставки" category="Ref">
+				<xr:TypeId>b3d9b5b2-e488-46e2-b6cc-caa1153463be</xr:TypeId>
+				<xr:ValueId>dafd18a4-a9c0-47f2-87cb-207017f47474</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СлужбыДоставки" category="Selection">
+				<xr:TypeId>9564f356-a49a-425e-8365-7f1de10cb8f1</xr:TypeId>
+				<xr:ValueId>6fc0b1fe-1286-4bc5-9fa3-1bba808bdb50</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СлужбыДоставки" category="List">
+				<xr:TypeId>b8d3f78f-9056-443b-ae1a-119b691d1f4f</xr:TypeId>
+				<xr:ValueId>2207aac4-6172-453a-be8c-ffa8c55f43e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СлужбыДоставки" category="Manager">
+				<xr:TypeId>751760bf-a941-4a1e-8900-dce9b2fdc640</xr:TypeId>
+				<xr:ValueId>06521999-64b9-415f-a66f-7e5d1eaacf31</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СлужбыДоставки</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7e46ff2d-480e-4be6-bdca-f780bb4123f0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

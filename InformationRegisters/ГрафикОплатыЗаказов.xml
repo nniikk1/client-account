@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="d2932d03-af5d-4b72-903a-1062ee85a74b">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ГрафикОплатыЗаказов" category="Record">
+				<xr:TypeId>90602e8c-ee1c-4d88-96da-a826a1da2b60</xr:TypeId>
+				<xr:ValueId>60e61e86-1f6f-4b66-b404-bb35f47fcdf4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ГрафикОплатыЗаказов" category="Manager">
+				<xr:TypeId>6c518198-3625-424e-b0f5-1ae42145768c</xr:TypeId>
+				<xr:ValueId>d447486f-097b-4c7e-82b4-4033441340fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ГрафикОплатыЗаказов" category="Selection">
+				<xr:TypeId>82e57ec6-cc85-43a4-a975-506300437360</xr:TypeId>
+				<xr:ValueId>7922dc5d-0b22-444b-9a4a-db751a1a035f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ГрафикОплатыЗаказов" category="List">
+				<xr:TypeId>10563495-cbce-45ed-bfcc-2f3d3128748e</xr:TypeId>
+				<xr:ValueId>bbd535f7-5dfc-4e23-aba2-e027c4a64fbb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ГрафикОплатыЗаказов" category="RecordSet">
+				<xr:TypeId>f88f502d-a904-4c64-920b-e786bd442bcb</xr:TypeId>
+				<xr:ValueId>68df3d7a-3a9e-4019-b842-33e4bb6351cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ГрафикОплатыЗаказов" category="RecordKey">
+				<xr:TypeId>1b3c0dcd-6f90-4981-9ef8-fb9c9d95177d</xr:TypeId>
+				<xr:ValueId>f0417e42-835b-444e-9f86-82e65d3c6ac2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ГрафикОплатыЗаказов" category="RecordManager">
+				<xr:TypeId>5f0fbeb7-23da-4c17-9100-a41a8ce16da5</xr:TypeId>
+				<xr:ValueId>dcf1b346-9571-474c-8b1c-4094963bbd41</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГрафикОплатыЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>56c97ee3-ac22-45b7-b334-45c9811e9772</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="8cdf2031-6b7f-41f7-b167-b3acb792c74a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СчетНаОплату</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>88ffb344-d858-45b9-aa6a-9ca854318cc6</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

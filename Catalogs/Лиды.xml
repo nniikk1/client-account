@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="e9805818-6df1-44d1-a243-1f7ee349cb12">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Лиды" category="Object">
+				<xr:TypeId>00ed77e6-cac2-4bd5-8b83-0ac7a519537e</xr:TypeId>
+				<xr:ValueId>803072b0-2d1e-4f95-856f-253f5f2c855f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Лиды" category="Ref">
+				<xr:TypeId>8e52b30a-c08b-48b1-8c44-fd5cecec5191</xr:TypeId>
+				<xr:ValueId>5edb4267-2b5f-413c-bb2f-171f3b929889</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Лиды" category="Selection">
+				<xr:TypeId>b175fe01-c52d-41b6-992f-2b3af2af94fb</xr:TypeId>
+				<xr:ValueId>249986e3-63e2-4c75-9629-f4732a504afe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Лиды" category="List">
+				<xr:TypeId>d1893aed-a936-48a3-b388-b47cb17af639</xr:TypeId>
+				<xr:ValueId>1ea751e0-6852-4b01-a19a-5df7339ea5aa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Лиды" category="Manager">
+				<xr:TypeId>960b1a22-0635-43d3-9c43-eecb898d1866</xr:TypeId>
+				<xr:ValueId>4136e2d9-b01a-438d-8b27-e2dfed71b156</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Лиды</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>11c00d46-67b0-46a8-86f8-d1561c7f5d7a</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

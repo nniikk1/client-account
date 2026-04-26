@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="ccf06a37-44f3-4210-99fd-90b9584c4719">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СостоянияПоОбъектамУчетаЭДО" category="Record">
+				<xr:TypeId>f70aec4e-bebe-4414-adcb-f86d1ac205ac</xr:TypeId>
+				<xr:ValueId>b312d65f-bafb-46c4-bfd9-e41ade0cc827</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СостоянияПоОбъектамУчетаЭДО" category="Manager">
+				<xr:TypeId>65920545-99f2-4e89-bbd3-d5c92f9fea48</xr:TypeId>
+				<xr:ValueId>f2a3a5f3-b9ac-49db-b95c-10144b84717e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СостоянияПоОбъектамУчетаЭДО" category="Selection">
+				<xr:TypeId>3ed3ac3e-eba1-4388-a06b-7ae18e28ff1d</xr:TypeId>
+				<xr:ValueId>d0d97d0a-c9b5-4c9d-8d07-bc2eef78f8e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СостоянияПоОбъектамУчетаЭДО" category="List">
+				<xr:TypeId>fa9764b8-1feb-426f-8423-5f06ac70c37f</xr:TypeId>
+				<xr:ValueId>ab673df6-049a-414d-a35d-1e334b06a4f4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СостоянияПоОбъектамУчетаЭДО" category="RecordSet">
+				<xr:TypeId>101ccb74-b3a8-4ada-8b18-a7e1fd3c3f8e</xr:TypeId>
+				<xr:ValueId>2c2aa2fb-6a96-4166-8a7a-00f8973c4c61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СостоянияПоОбъектамУчетаЭДО" category="RecordKey">
+				<xr:TypeId>959b7a53-f918-439b-a088-6353f4aebed0</xr:TypeId>
+				<xr:ValueId>2f1786a4-cfa3-4dad-b1c7-b9b4e8802cb5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СостоянияПоОбъектамУчетаЭДО" category="RecordManager">
+				<xr:TypeId>72f6e828-fd15-43de-afe4-4b5b06947597</xr:TypeId>
+				<xr:ValueId>24c73258-0172-4a72-b338-f94bc7e6e4de</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияПоОбъектамУчетаЭДО</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>94cb8fd8-e78e-4367-870e-e56a7e5e245d</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="82caee17-4d19-401c-b9c1-8c736b5022e4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеЭДО</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9eb44008-3db8-4c27-940d-149dfe89ffe0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияДокументовЭДО</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="6f36f323-1258-42c4-bfa9-6c7ad83653f4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СсылкаНаОбъект</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bb074754-23ca-4d93-98f1-533aec10d349</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОснованияЭлектронныхДокументовЭДО</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

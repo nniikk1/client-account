@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="716217cb-a5dc-4334-b456-faf459159497">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ФактОплатыЗаказов" category="Record">
+				<xr:TypeId>8563460d-14bd-44bb-a183-b0abe3d0d8e1</xr:TypeId>
+				<xr:ValueId>5b67c5d2-08cb-474b-a2bd-3e31a4b3376e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ФактОплатыЗаказов" category="Manager">
+				<xr:TypeId>2c53e15f-809b-4e67-aaf9-e69e7192b8e8</xr:TypeId>
+				<xr:ValueId>b7aa144b-8559-4b9e-9b1b-454d37680e38</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ФактОплатыЗаказов" category="Selection">
+				<xr:TypeId>c4ccf55a-919a-4e8b-8797-7beeeb9f7fc8</xr:TypeId>
+				<xr:ValueId>127df5fd-07af-4331-80b3-f3af0bce6f14</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ФактОплатыЗаказов" category="List">
+				<xr:TypeId>76dc559e-1c52-4042-91fc-e4120b60f174</xr:TypeId>
+				<xr:ValueId>cf537967-8447-4507-b728-ec4f7f5796d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ФактОплатыЗаказов" category="RecordSet">
+				<xr:TypeId>e6f36fdb-6552-4b89-afbf-84ae93b1a541</xr:TypeId>
+				<xr:ValueId>87cda388-221f-4784-9a55-a64950fa5a8c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ФактОплатыЗаказов" category="RecordKey">
+				<xr:TypeId>3f64c072-a157-48e8-ab75-4f996f08e34d</xr:TypeId>
+				<xr:ValueId>6a76b0de-4cf7-466b-9598-33db9abef4f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ФактОплатыЗаказов" category="RecordManager">
+				<xr:TypeId>610cdd91-4374-4cea-a04c-baf01dbabeb9</xr:TypeId>
+				<xr:ValueId>b720970b-2204-400c-aeaa-32e9a898c60f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ФактОплатыЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>dea73eaa-86a8-4740-9cfb-e48bf65f95ec</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="7adaa621-d7cc-4e95-87a7-aebcc1c7804d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаОплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>39edf61c-0023-4e33-84df-b298ac4f5054</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="f46d699f-1bf3-4709-a6da-37a45d0c6307">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сумма</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1b4372fa-c3fb-41d5-a62e-35088094147b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="95c21be2-5468-4422-ae2a-1f5556f833a0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаАванса</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d8f9c5c8-01e4-41ff-8dae-ca3fd15b5eb3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="4dca582d-2bff-4161-b0c7-dcc71ce49c5f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СчетНаОплату</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0e4c0979-83a2-4057-96a5-ca759e8c09fa</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

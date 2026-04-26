@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="8696c3c9-35b7-4f24-ab9d-5bb37b47b18c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ГрафикВыполненияЗаказов" category="Record">
+				<xr:TypeId>1eed44a4-8bd3-4f0a-9027-5478f55f2de0</xr:TypeId>
+				<xr:ValueId>678e1d6a-2321-412f-a6ca-ef34d121035e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ГрафикВыполненияЗаказов" category="Manager">
+				<xr:TypeId>fec17812-2bd3-476b-8709-af3ba75124dd</xr:TypeId>
+				<xr:ValueId>d06fc66d-d1b2-42cb-b0b5-f1a47c80b702</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ГрафикВыполненияЗаказов" category="Selection">
+				<xr:TypeId>70cabd34-cceb-461c-8cd7-09a5a99e7fd8</xr:TypeId>
+				<xr:ValueId>0c305461-1d76-4028-b720-4d37292b3e79</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ГрафикВыполненияЗаказов" category="List">
+				<xr:TypeId>18e4d7dd-ce32-451c-88f6-824c09ec9e8c</xr:TypeId>
+				<xr:ValueId>dddb0326-2253-4d0f-9aac-972e6b81a64e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ГрафикВыполненияЗаказов" category="RecordSet">
+				<xr:TypeId>123728a6-f593-4b7a-b1be-02a4b4981dec</xr:TypeId>
+				<xr:ValueId>6afcca57-c8e6-4110-bf9d-0cfa11dd0c02</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ГрафикВыполненияЗаказов" category="RecordKey">
+				<xr:TypeId>006e0907-98f8-4c15-b847-ad04edf9af8d</xr:TypeId>
+				<xr:ValueId>6b61786b-f57a-4be9-be03-309b17749978</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ГрафикВыполненияЗаказов" category="RecordManager">
+				<xr:TypeId>9029cddb-207e-4fe6-b458-6e0cf38de2fe</xr:TypeId>
+				<xr:ValueId>a78f95ae-ae79-4302-a522-025f6c217bc3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГрафикВыполненияЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>03e68315-ae30-4948-b66a-c6433178dfa4</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="69e5bddc-d2c4-4aa4-91e5-08cd845ec8ac">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Выполнено</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8a4956a2-b8df-4e9d-9341-3d6693e6a3b4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="65036991-370e-4f13-a814-ab68b9903477">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Заказ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>61aa1456-3d53-4171-80ad-bab01345bd11</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
