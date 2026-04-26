@@ -60,7 +60,6 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
-							<TextColor>style:TableHeaderTextColor</TextColor>
 							<ContextMenu name="ВсегоЗаказовКонтекстноеМеню" id="34"/>
 							<ExtendedTooltip name="ВсегоЗаказовРасширеннаяПодсказка" id="35"/>
 						</LabelField>
@@ -101,7 +100,6 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
-							<TextColor>#D0786B</TextColor>
 							<ContextMenu name="ОжидаетОплатыКонтекстноеМеню" id="37"/>
 							<ExtendedTooltip name="ОжидаетОплатыРасширеннаяПодсказка" id="38"/>
 						</LabelField>
@@ -141,7 +139,6 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<Font ref="style:NormalTextFont" height="22" bold="true" kind="StyleItem" scale="100"/>
-							<TextColor>#3F3FBC</TextColor>
 							<ContextMenu name="ВРаботеКонтекстноеМеню" id="40"/>
 							<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="41"/>
 						</LabelField>
