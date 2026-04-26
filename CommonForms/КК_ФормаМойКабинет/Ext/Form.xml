@@ -147,6 +147,9 @@
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<Attributes>
 		<Attribute name="ВсегоЗаказов" id="1">
 			<Type>
