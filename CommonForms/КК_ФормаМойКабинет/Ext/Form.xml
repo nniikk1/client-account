@@ -4,13 +4,7 @@
 	<ChildItems>
 		<LabelField name="Контрагент" id="42">
 			<DataPath>Контрагент</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добро пожаловать, </v8:content>
-				</v8:item>
-			</Title>
-			<TitleFont ref="style:NormalTextFont" height="22" kind="StyleItem" scale="100"/>
+			<TitleLocation>None</TitleLocation>
 			<Font ref="style:NormalTextFont" height="22" kind="StyleItem" scale="100"/>
 			<ContextMenu name="КонтрагентКонтекстноеМеню" id="43"/>
 			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="44"/>
@@ -30,6 +24,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
 			<ExtendedTooltip name="ГруппаКарточкиРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<UsualGroup name="КарточкаВсего" id="7">
@@ -47,8 +42,9 @@
 							<v8:content>Карточка всего</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Width>22</Width>
+					<Width>28</Width>
 					<Height>4</Height>
+					<HorizontalAlign>Center</HorizontalAlign>
 					<Representation>StrongSeparation</Representation>
 					<ExtendedTooltip name="КарточкаВсегоРасширеннаяПодсказка" id="8"/>
 					<ChildItems>
@@ -89,7 +85,8 @@
 							<v8:content>Карточка оплата</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Width>33</Width>
+					<Width>28</Width>
+					<HorizontalAlign>Center</HorizontalAlign>
 					<Representation>StrongSeparation</Representation>
 					<ExtendedTooltip name="КарточкаОплатаРасширеннаяПодсказка" id="4"/>
 					<ChildItems>
@@ -128,7 +125,8 @@
 							<v8:content>Карточка в работе</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Width>25</Width>
+					<Width>28</Width>
+					<HorizontalAlign>Center</HorizontalAlign>
 					<Representation>StrongSeparation</Representation>
 					<ExtendedTooltip name="КарточкаВРаботеРасширеннаяПодсказка" id="6"/>
 					<ChildItems>
@@ -154,6 +152,13 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<Button name="ОткрытьМоиЗаказыГиперссылка" id="50">
+			<Type>Hyperlink</Type>
+			<CommandName>Form.Command.ОткрытьМоиЗаказы</CommandName>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Font ref="style:NormalTextFont" height="14" kind="StyleItem" scale="100"/>
+			<ExtendedTooltip name="ОткрытьМоиЗаказыГиперссылкаРасширеннаяПодсказка" id="51"/>
+		</Button>
 	</ChildItems>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -217,4 +222,22 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОткрытьМоиЗаказы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к моим заказам →</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму "Мои заказы"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМоиЗаказы</Action>
+			<ModifiesSavedData>false</ModifiesSavedData>
+		</Command>
+	</Commands>
 </Form>
