@@ -86,6 +86,7 @@
 					<Events>
 						<Event name="OnChange">ТоварыНоменклатураПриИзменении</Event>
 						<Event name="ChoiceProcessing">ТоварыНоменклатураОбработкаВыбора</Event>
+						<Event name="StartChoice">ТоварыНоменклатураНачалоВыбора</Event>
 					</Events>
 				</InputField>
 				<LabelField name="ТоварыЕдиницаИзмерения" id="39">
