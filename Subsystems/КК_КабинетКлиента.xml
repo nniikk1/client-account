@@ -20,6 +20,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.КК_ФормаМойКабинет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.КК_ОткрытьМойКабинет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.КК_КаталогТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.КК_ОткрытьКаталогТоваров</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
