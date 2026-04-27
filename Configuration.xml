@@ -132,9 +132,11 @@
 			<DefinedType>ОснованияЭлектронныхДокументовЭДО</DefinedType>
 			<DefinedType>ВладелецПрисоединенныхФайлов</DefinedType>
 			<CommonCommand>КК_ОткрытьМойКабинет</CommonCommand>
+			<CommonCommand>КК_ОткрытьКаталогТоваров</CommonCommand>
 			<CommonForm>КК_ФормаЗаказа</CommonForm>
 			<CommonForm>ПечатьДокументов</CommonForm>
 			<CommonForm>КК_ФормаМойКабинет</CommonForm>
+			<CommonForm>КК_КаталогТоваров</CommonForm>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Контрагенты</Catalog>
