@@ -19,65 +19,136 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
-		<Table name="Каталог" id="1">
-			<Representation>List</Representation>
-			<DataPath>Каталог</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
+		<UsualGroup name="ОсновнаяГруппа" id="100">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная группа</v8:content>
+				</v8:item>
+			</Title>
+			<ShowTitle>false</ShowTitle>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>true</VerticalStretch>
-			<ContextMenu name="КаталогКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="КаталогКоманднаяПанель" id="3">
-				<Visible>false</Visible>
-			</AutoCommandBar>
-			<ExtendedTooltip name="КаталогРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="КаталогСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>Каталог</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="КаталогСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="КаталогСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="КаталогСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>Каталог</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="КаталогСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="КаталогСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="КаталогУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>Каталог</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="КаталогУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="КаталогУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">КаталогВыбор</Event>
-			</Events>
 			<ChildItems>
-				<LabelField name="КаталогАртикул" id="14">
-					<DataPath>Каталог.Артикул</DataPath>
-					<ContextMenu name="КаталогАртикулКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="КаталогАртикулРасширеннаяПодсказка" id="16"/>
-				</LabelField>
-				<LabelField name="КаталогНаименование" id="17">
-					<DataPath>Каталог.Наименование</DataPath>
-					<ContextMenu name="КаталогНаименованиеКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="КаталогНаименованиеРасширеннаяПодсказка" id="19"/>
-				</LabelField>
-				<LabelField name="КаталогЦена" id="22">
-					<DataPath>Каталог.Цена</DataPath>
-					<HorizontalAlign>Right</HorizontalAlign>
-					<ContextMenu name="КаталогЦенаКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="КаталогЦенаРасширеннаяПодсказка" id="24"/>
-				</LabelField>
+				<Table name="Каталог" id="1">
+					<Representation>List</Representation>
+					<DataPath>Каталог</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ContextMenu name="КаталогКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="КаталогКоманднаяПанель" id="3">
+						<Visible>false</Visible>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КаталогРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="КаталогСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>Каталог</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КаталогСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="КаталогСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КаталогСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>Каталог</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КаталогСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="КаталогСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КаталогУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>Каталог</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КаталогУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="КаталогУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">КаталогВыбор</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="КаталогАртикул" id="14">
+							<DataPath>Каталог.Артикул</DataPath>
+							<ContextMenu name="КаталогАртикулКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="КаталогАртикулРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<LabelField name="КаталогНаименование" id="17">
+							<DataPath>Каталог.Наименование</DataPath>
+							<ContextMenu name="КаталогНаименованиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="КаталогНаименованиеРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+						<LabelField name="КаталогЦена" id="22">
+							<DataPath>Каталог.Цена</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<ContextMenu name="КаталогЦенаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КаталогЦенаРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаПанель" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="14" bold="true" kind="StyleItem" scale="100"/>
+					<Width>30</Width>
+					<Representation>WeakSeparation</Representation>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<Table name="Группы" id="200">
+							<Representation>Tree</Representation>
+							<DataPath>Группы</DataPath>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
+							<ContextMenu name="ГруппыКонтекстноеМеню" id="201"/>
+							<AutoCommandBar name="ГруппыКоманднаяПанель" id="202">
+								<Visible>false</Visible>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ГруппыРасширеннаяПодсказка" id="203"/>
+							<Events>
+								<Event name="OnActivateRow">ГруппыПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ГруппыНаименование" id="210">
+									<DataPath>Группы.Наименование</DataPath>
+									<ContextMenu name="ГруппыНаименованиеКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ГруппыНаименованиеРасширеннаяПодсказка" id="212"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<Button name="СброситьФильтр" id="220">
+							<Type>UsualButton</Type>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.СброситьФильтр</CommandName>
+							<ExtendedTooltip name="СброситьФильтрРасширеннаяПодсказка" id="221"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
-		</Table>
+			<ExtendedTooltip name="ОсновнаяГруппаРасширеннаяПодсказка" id="103"/>
+		</UsualGroup>
 	</ChildItems>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -164,6 +235,45 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="Группы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выбрать" id="1">
@@ -180,6 +290,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Выбрать</Action>
+			<ModifiesSavedData>false</ModifiesSavedData>
+		</Command>
+		<Command name="СброситьФильтр" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все товары без фильтра по группе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьФильтр</Action>
 			<ModifiesSavedData>false</ModifiesSavedData>
 		</Command>
 	</Commands>
